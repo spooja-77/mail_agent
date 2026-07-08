@@ -44,7 +44,7 @@ for key in ["SMTP_HOST", "SMTP_PORT", "SMTP_USER", "SMTP_PASS"]:
 GROQ_API_KEY = get_config("GROQ_API_KEY")
 
 st.set_page_config(page_title="Email Agent", page_icon="📧", layout="centered")
-st.title("📧 Groq Email Agent")
+st.title("📧 Agentic AI Email")
 st.caption("Tell it who to email and what to say — it drafts and sends the email for you.")
 
 if not GROQ_API_KEY:
