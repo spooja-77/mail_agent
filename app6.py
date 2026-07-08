@@ -10,7 +10,6 @@ adding GROQ_API_KEY, SMTP_USER, SMTP_PASS, SMTP_HOST, SMTP_PORT as
 import os
 import json
 import streamlit as st
-from dotenv import load_dotenv
 from groq import Groq
 
 import httpx
