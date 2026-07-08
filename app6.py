@@ -53,22 +53,24 @@ if not GROQ_API_KEY:
     )
     st.stop()
 
+client = Groq(api_key=GROQ_API_KEY)
+
 # =====================================================
 # Local SSL Bypass (for office network only)
 # Set SSL_VERIFY=false in your .env for local testing
 # =====================================================
 
-SSL_VERIFY = get_config("SSL_VERIFY", "true").lower() == "true"
+#SSL_VERIFY = get_config("SSL_VERIFY", "true").lower() == "true"
 
-http_client = httpx.Client(
-    verify=SSL_VERIFY,
-    timeout=60.0
-)
+#http_client = httpx.Client(
+#    verify=SSL_VERIFY,
+#    timeout=60.0
+#)
 
-client = Groq(
-    api_key=GROQ_API_KEY,
-    http_client=http_client
-)
+#client = Groq(
+#    api_key=GROQ_API_KEY,
+#    http_client=http_client
+#)
 
 tools = [
     {
