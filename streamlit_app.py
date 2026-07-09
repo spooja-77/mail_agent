@@ -15,7 +15,7 @@ from groq import Groq
 
 import httpx
 
-from email_tool import send_email
+from email_tool (1) import send_email
 
 # Load variables from .env into os.environ (needed for LOCAL runs).
 # On Streamlit Cloud there is no .env file, so this simply does nothing there.
@@ -34,7 +34,7 @@ def get_config(key: str, default: str = None):
     return os.environ.get(key, default)
 
 
-# Push secrets into os.environ so email_tool.py (which reads os.environ) works
+# Push secrets into os.environ so email_tool (1).py (which reads os.environ) works
 # unchanged whether running locally or on Streamlit Cloud.
 for key in ["SMTP_HOST", "SMTP_PORT", "SMTP_USER", "SMTP_PASS"]:
     val = get_config(key)
