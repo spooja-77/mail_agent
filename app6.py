@@ -159,7 +159,7 @@ if st.session_state.pending_email:
 # ---------------------------------------------------------------------------
 # Chat input
 # ---------------------------------------------------------------------------
-user_input = st.chat_input("e.g. Email xyz@example.com that the meeting moved to 4pm")
+user_input = st.chat_input("Let's write your next email together.")
 
 if user_input:
     st.session_state.messages.append({"role": "user", "content": user_input})
