@@ -15,7 +15,7 @@ from groq import Groq
 
 import httpx
 
-from email_tool (1) import send_email
+from \email_tool (1) import send_email
 
 # Load variables from .env into os.environ (needed for LOCAL runs).
 # On Streamlit Cloud there is no .env file, so this simply does nothing there.
